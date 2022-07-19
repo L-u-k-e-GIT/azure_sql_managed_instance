@@ -22,6 +22,20 @@ variable "MD_VM_ENV" {
   default     = ""
 }
 
+variable "MD_ALL_TAGS" {}
+
+
+
+###########SQL Variables
+variable "MD_SQL_ADMIN" {}
+variable "MD_SQL_PWD" {}
+variable "MD_SQL_LICENSE_TYPE" {}
+variable "MD_SUBNET_ID" {}
+variable "MD_SQL_SKU" {}
+variable "MD_SQL_CORE" {}
+variable "MD_SQL_DISK_SIZE" {}
+
+
 
 ###########NAMING CONVENTION PREFIX
 
@@ -48,12 +62,3 @@ variable "MD_SQL_MANAGED_PREFIX" {
   type        = string
   default     = ""
 }
-
-variable "MD_SQL_ADMIN" {}
-variable "MD_SQL_PWD" {}
-variable "MD_SQL_LICENSE_TYPE" {}
-variable "MD_SUBNET_ID" {}
-variable "MD_SQL_SKU" {}
-variable "MD_SQL_CORE" {}
-variable "MD_SQL_DISK_SIZE" {}
-
