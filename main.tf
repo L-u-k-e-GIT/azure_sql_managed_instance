@@ -1,3 +1,13 @@
+terraform {
+  required_providers {
+  
+   azurerm = {
+      source = "hashicorp/azurerm"
+      #version = "=2.97.0"
+    }
+  }
+}
+
 resource "azurerm_mssql_managed_instance" "my_sql" {
 
   name                         = "${var.MD_SQL_MANAGED_PREFIX}-${var.MD_PROJECT_NAME}-${var.MD_SUBSCRIPTION_PREFIX}-${var.MD_REGION_PREFIX}-${var.MD_VM_ENV}"
